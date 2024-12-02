@@ -30,3 +30,33 @@ Utilize o gcc para compilar os arquivos servidor.c e cliente.c:
 gcc servidor.c -o servidor -lpthread
 gcc cliente.c -o cliente -lpthread
 ```
+3. Inicie o Servidor
+Execute o servidor, que criará as fifos e inicializará o sistema:
+```
+./servidor
+```
+4. Inicie os Clientes
+Em terminais separados, execute os clientes com um número único para cada um:
+```
+./cliente <NUMERO_CLIENTE>
+```
+5. Faca Operações
+No terminal do cliente, envie as operações na seguinte formato:
+- Depósito: D <NUMERO_CONTA> <MONTANTE>
+- Levantamento: L <NUMERO_CONTA> <MONTANTE>
+- Transferência: T <NUMERO_CONTA_ORIGEM> <NUMERO_CONTA_DESTINO> <MONTANTE>
+- Consulta: C <NUMERO_CONTA>
+- Sair: X
+
+6. Fechar ou Abrir o Banco
+Use os seguintes comandos para controlar o estado do banco:
+    - Fechar
+    ```
+    kill -SIGUSR1 <PID_DO_SERVIDOR>
+    ```
+    - Abrir
+    ```
+    kill -SIGUSR2 <PID_DO_SERVIDOR>
+    ``` 
+
+   

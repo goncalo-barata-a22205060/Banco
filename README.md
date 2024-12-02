@@ -18,13 +18,13 @@ No Cliente:
 - Interface Simples: A interação com o cliente é feita pelo terminal.
 
 ##Como implementar
-###1. Clone o Repositório
+1. Clone o Repositório
 Clone este projeto para o seu computador local:
 ```
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_REPOSITORIO>
 ```
-###2. Compile os Arquivos
+2. Compile os Arquivos
 Utilize o gcc para compilar os arquivos servidor.c e cliente.c:
 ```
 gcc servidor.c -o servidor -lpthread

@@ -17,6 +17,7 @@ No Cliente:
 - Respostas: O cliente lê as respostas do servidor, incluindo o status do pedido e saldo atualizado.
 - Interface Simples: A interação com o cliente é feita pelo terminal.
 
+
 ##Como implementar
 1. Clone o Repositório
 Clone este projeto para o seu computador local:
